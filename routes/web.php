@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController; // Tambahkan titik koma di sini
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,7 @@ Route::get('/', function () {
 Route::get('/profile', [ProfileController::class, 'profile']);
 
 Route::get('/profile/{nama}/{kelas}/{npm}', [ProfileController::class, 'profile']);
+
+Route::get('/create', [UserController::class, 'create']);
+
+Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
