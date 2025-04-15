@@ -14,7 +14,7 @@ class ProfileController extends Controller
         'npm' => $npm, 
         ];
 
-        return view('profile', $data); 
+        return view ('profile', $data); 
 }
 }
 
