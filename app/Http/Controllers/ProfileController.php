@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Kelas;
+use App\Models\UserModel;
 
 class ProfileController extends Controller
 {
